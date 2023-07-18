@@ -1,0 +1,324 @@
+
+
+
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+ 
+}
+
+.homeDivError {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.lateral {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.search {
+  padding: 8px;
+  border-radius: 4px;
+  margin-top: 8px;
+}
+
+.searchH2 {
+
+}
+
+.bars {
+  width: 100%;
+  margin-top: 8px;
+  padding: 8px;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+
+.titles {
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 2rem;
+}
+
+.items {
+  margin-top: 24px;
+}
+
+.order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.number {
+  margin-top: 40px;
+}
+
+.paging {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.font {
+  margin: 0 8px;
+  font-size: 1.2rem;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.font:hover {
+  background-color: lightgray;
+}
+
+.pageNumberTop {
+  background-image: url('../../../asset/5685921_58670.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 16px;
+  font-size: 5rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #7cb342;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container > :last-child {
+  margin-bottom: 0;
+}
+
+.all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px;
+}
+
+.loader {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@keyframes loading {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1, 2.5);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+
+.gameNotFound {
+  max-width: 100%;
+  height: auto;
+}
+
+.btnImgContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.btnNotFound {
+  display: flex;
+  justify-content: center;
+  margin: 16px;
+  padding: 8px 16px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #7cb342 ;
+  border: none;
+  border-radius: .4rem;
+  cursor: pointer;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+.homeContent {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.sideBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  margin-right: 16px;
+}
+
+.filterSection, .orderSection {
+  width: 100%;
+}
+
+.filterContainer, .orderContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 75%;
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
+  width: 100%;
+}
+
+.paginationContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  margin: .6rem 0 ;
+}
+
+.paginationBtn {
+  margin: 1rem 0.2rem;
+  padding: 8px 16px;
+  font-size: .8rem;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.paginationBtn:hover {
+  background-color: lightgray;
+}
+
+.paginationBtn:focus {
+  outline: none;
+}
+
+
+.gameCard {
+  position: relative;
+}
+
+.gameImage {
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease;
+}
+
+.gameCard:hover .gameName {
+  visibility: visible;
+  opacity: 1;
+}
+
+.gameName {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 14px;
+  padding: 4px 8px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+
+
+.orderSection {
+  width: 100%;
+}
+
+.orderTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #7cb342 ;
+
+}
+
+.orderContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.orderSpan {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.orderRadio {
+  display: flex;
+  flex-direction: column;
+}
+
+.orderRadio label {
+  margin-bottom: 4px;
+}
+
+.orderRadio input[type="radio"] {
+  margin-right: 4px;
+}
+
+
